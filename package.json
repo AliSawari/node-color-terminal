@@ -1,8 +1,8 @@
 {
     "name": "color-terminal",
-    "description": "Control your terminal colours. Forked from Mattijs Hoitink's node-terminal (https://github.com/mattijs/node-terminal)",
+    "description": "Control your terminal colours.",
     "author": "Mattijs Hoitink <mattijs@monkeyandmachine.com> (http://monkeyandmachine.com/)",
-    "contributors": ["Alexander 'yumitsu' Zinchenko <yumitsu@mouseed.com> (https://github.com/yumitsu/)"],
+    "contributors": ["Alexander 'yumitsu' Zinchenko <yumitsu@mouseed.com> (https://github.com/yumitsu/)", "Forgotten Labors Initiative <forlab-public@mouseed.com (https://github.com/forgotten-labour)"],
     "homepage": "https://github.com/forgotten-labors/node-color-terminal",
     "bugs": {"url": "https://github.com/forgotten-labors/node-color-terminal/issues", "email": "forlab@mouseed.com"},
     "repository": {"type": "git", "url": "https://github.com/forgotten-labors/node-color-terminal.git"},
