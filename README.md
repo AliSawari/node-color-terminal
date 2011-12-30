@@ -1,6 +1,26 @@
-# Terminal
+# Color Terminal
 
-Terminal is a small package that can be used with [node.js](http://nodejs.org) to control terminal output. The package can move the cursor in the terminal and output colored text. It can colorize a message with a simple straightforward markup syntax.
+`color-terminal` is a small package that can be used with [node.js](http://nodejs.org) to control terminal output. The package can move the cursor in the terminal and output colored text. It can colorize a message with a simple straightforward markup syntax.
+
+# Installation and use
+
+Install with [npm](http://npmjs.org) to current directory:
+
+```bash
+  npm -d install color-terminal .
+```
+
+Or install globally:
+
+```bash
+  npm -d -g install color-terminal
+```
+
+Then `require()` package from your script:
+
+```coffeescript
+  terminal = require('color-terminal')
+```
 
 # Examples
 
@@ -11,28 +31,36 @@ Some examples from the `examples` directory.
 Control colored output. See also `examples/colors.js`. Colors may vary depending on the terminal settings.
 
 Simple color changing:
-    
-    terminal.color('magenta').write('Unicorn');
+
+```coffeescript   
+  terminal.color('magenta').write('Unicorn');
+```
 
 This will output `Unicorn` in magenta (or purple). To change the background color to magenta:
 
-    terminal.color('magenta', 'background').write('Unicorn');
+```coffeescript
+  terminal.color('magenta', 'background').write('Unicorn');
+```
 
 ### Color formatting
 
-`Terminal` supports formatting strings with colors using a simple syntax. Outputting `Unicorn` in magenta (like the example above) would look like this:
+`color-terminal` supports formatting strings with colors using a simple syntax. Outputting `Unicorn` in magenta (like the example above) would look like this:
 
-    terminal.colorize('%mUnicorn');
-    
-    // And changing the background color to magenta
-    terminal.colorize('%5Unicorn');
+```coffeescript
+  terminal.colorize('%mUnicorn');
+  
+  # And changing the background color to magenta
+  terminal.colorize('%5Unicorn');
+```
 
 Using this syntax we can create `Rainbows` easily in one line:
 
-    terminal.colorize('%rR%ma%ci%bn%yb%go%rw\n');
-    
-    // Or with background colors
-    terminal.colorize('%w%1  R  %2  A  %3  I  %4  N  %5  B  %6  O  %7  W  %n ');
+```coffeescript
+  terminal.colorize('%rR%ma%ci%bn%yb%go%rw\n');
+  
+  # Or with background colors
+  terminal.colorize('%w%1  R  %2  A  %3  I  %4  N  %5  B  %6  O  %7  W  %n ');
+```
 
 The colorize function accepts the following modifiers:
 
@@ -56,10 +84,22 @@ The colorize function accepts the following modifiers:
           %n,%N  Resets the color
           %%     A single %
 
-Colored ouput can be reset with the `reset` function:
+Colored ouput can be reset with the `reset()` function:
 
-    terminal.color('red').write('This is red,').reset().write(' and this is not');
+```coffeescript
+  terminal.color('red').write('This is red,').reset().write(' and this is not');
+```
+
+# Credits
+
+Original package by Mattijs Hoitink.
+* [mattijs@GitHub](https://github.com/mattijs) — GitHub profile.
+* [mattijs/node-terminal](https://github.com/mattijs/node-terminal) — original package.
+* [monkeyandmachine](http://monkeyandmachine.com) — author's blog.
+
+This version of the package maintained and developed by [Forgotten Labors Initiative](https://forgotten-labors.github.com).
+
 # License
 
-Terminal is licensed under The MIT License
+`color-terminal` is licensed under the [MIT License](http://opensource.org/licenses/mit-license.php).
 
