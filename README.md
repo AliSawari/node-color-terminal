@@ -93,6 +93,7 @@ Colored ouput can be reset with the `reset()` function:
 # Credits
 
 Original package by Mattijs Hoitink.
+
 * [mattijs@GitHub](https://github.com/mattijs) — GitHub profile.
 * [mattijs/node-terminal](https://github.com/mattijs/node-terminal) — original package.
 * [monkeyandmachine](http://monkeyandmachine.com) — author's blog.
