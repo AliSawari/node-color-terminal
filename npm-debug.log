@@ -1,0 +1,327 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+info using npm@1.0.105
+info using node@v0.4.12
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/yumitsu/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose publish [ '.' ]
+silly testEngine { name: 'color-terminal',
+silly testEngine   description: 'Control your terminal colours.',
+silly testEngine   author: 
+silly testEngine    { name: 'Mattijs Hoitink',
+silly testEngine      email: 'mattijs@monkeyandmachine.com',
+silly testEngine      url: 'http://monkeyandmachine.com/' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Alexander \'yumitsu\' Zinchenko',
+silly testEngine        email: 'yumitsu@mouseed.com',
+silly testEngine        url: 'https://github.com/yumitsu/' },
+silly testEngine      { name: 'Forgotten Labors Initiative',
+silly testEngine        url: 'https://github.com/forgotten-labour' } ],
+silly testEngine   homepage: 'https://github.com/forgotten-labors/node-color-terminal',
+silly testEngine   bugs: 
+silly testEngine    { email: 'forlab@mouseed.com',
+silly testEngine      url: 'https://github.com/forgotten-labors/node-color-terminal/issues' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/forgotten-labors/node-color-terminal.git' },
+silly testEngine   main: 'color-terminal',
+silly testEngine   files: 
+silly testEngine    [ 'index.js',
+silly testEngine      'LICENSE',
+silly testEngine      'package.json',
+silly testEngine      'README.md',
+silly testEngine      'color-terminal.js' ],
+silly testEngine   version: '0.0.2',
+silly testEngine   keywords: [ 'terminal', 'colors', 'text' ],
+silly testEngine   _npmUser: 
+silly testEngine    { name: 'forgotten-labors',
+silly testEngine      email: 'forlab-public@mouseed.com' },
+silly testEngine   _id: 'color-terminal@0.0.2',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   scripts: {} }
+verbose caching /Users/yumitsu/Work/opensource/node-terminal/package.json
+verbose loadDefaults color-terminal@0.0.2
+info prepublish color-terminal@0.0.2
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', href: '.' }
+silly testEngine { name: 'color-terminal',
+silly testEngine   description: 'Control your terminal colours.',
+silly testEngine   author: 
+silly testEngine    { name: 'Mattijs Hoitink',
+silly testEngine      email: 'mattijs@monkeyandmachine.com',
+silly testEngine      url: 'http://monkeyandmachine.com/' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Alexander \'yumitsu\' Zinchenko',
+silly testEngine        email: 'yumitsu@mouseed.com',
+silly testEngine        url: 'https://github.com/yumitsu/' },
+silly testEngine      { name: 'Forgotten Labors Initiative',
+silly testEngine        url: 'https://github.com/forgotten-labour' } ],
+silly testEngine   homepage: 'https://github.com/forgotten-labors/node-color-terminal',
+silly testEngine   bugs: 
+silly testEngine    { email: 'forlab@mouseed.com',
+silly testEngine      url: 'https://github.com/forgotten-labors/node-color-terminal/issues' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/forgotten-labors/node-color-terminal.git' },
+silly testEngine   main: 'color-terminal',
+silly testEngine   files: 
+silly testEngine    [ 'index.js',
+silly testEngine      'LICENSE',
+silly testEngine      'package.json',
+silly testEngine      'README.md',
+silly testEngine      'color-terminal.js' ],
+silly testEngine   version: '0.0.2',
+silly testEngine   keywords: [ 'terminal', 'colors', 'text' ],
+silly testEngine   _npmUser: 
+silly testEngine    { name: 'forgotten-labors',
+silly testEngine      email: 'forlab-public@mouseed.com' },
+silly testEngine   _id: 'color-terminal@0.0.2',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/Users/yumitsu/Work/opensource/node-terminal' }
+verbose caching package.json
+verbose loadDefaults color-terminal@0.0.2
+verbose pack /Users/yumitsu/Work/opensource/node-terminal /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/tmp.tgz
+silly makeList /Users/yumitsu/Work/opensource/node-terminal
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335'
+verbose mkdir done: /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335 755
+verbose mkdir'ed /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/Users/yumitsu/Work/opensource' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/___package.npm'
+verbose mkdir done: /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/tmp.tgz' ],
+silly spawning   '/var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/___package.npm' ]
+silly tar err x node-terminal/color-terminal.js
+silly tar err x node-terminal/index.js
+silly tar err x node-terminal/LICENSE
+silly tar err x node-terminal/package.json
+silly tar err x node-terminal/README.md
+silly tar exit 0
+silly asyncMap in gTP /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/___package.npm/node-terminal
+silly asyncMap in gTP /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/___package.npm/node-terminal/color-terminal.js
+silly asyncMap in gTP /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/___package.npm/node-terminal/index.js
+silly asyncMap in gTP /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/___package.npm/node-terminal/LICENSE
+silly asyncMap in gTP /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/___package.npm/node-terminal/package.json
+silly asyncMap in gTP /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/___package.npm/node-terminal/README.md
+verbose gunzed /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/___package.npm/node-terminal
+verbose rm'ed /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/package
+verbose renamed [ '/var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/___package.npm/node-terminal',
+verbose renamed   '/var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/package' ]
+silly testEngine { name: 'color-terminal',
+silly testEngine   description: 'Control your terminal colours.',
+silly testEngine   author: 
+silly testEngine    { name: 'Mattijs Hoitink',
+silly testEngine      email: 'mattijs@monkeyandmachine.com',
+silly testEngine      url: 'http://monkeyandmachine.com/' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Alexander \'yumitsu\' Zinchenko',
+silly testEngine        email: 'yumitsu@mouseed.com',
+silly testEngine        url: 'https://github.com/yumitsu/' },
+silly testEngine      { name: 'Forgotten Labors Initiative',
+silly testEngine        url: 'https://github.com/forgotten-labour' } ],
+silly testEngine   homepage: 'https://github.com/forgotten-labors/node-color-terminal',
+silly testEngine   bugs: 
+silly testEngine    { email: 'forlab@mouseed.com',
+silly testEngine      url: 'https://github.com/forgotten-labors/node-color-terminal/issues' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/forgotten-labors/node-color-terminal.git' },
+silly testEngine   main: 'color-terminal',
+silly testEngine   files: 
+silly testEngine    [ 'index.js',
+silly testEngine      'LICENSE',
+silly testEngine      'package.json',
+silly testEngine      'README.md',
+silly testEngine      'color-terminal.js' ],
+silly testEngine   version: '0.0.2',
+silly testEngine   keywords: [ 'terminal', 'colors', 'text' ],
+silly testEngine   _npmUser: 
+silly testEngine    { name: 'forgotten-labors',
+silly testEngine      email: 'forlab-public@mouseed.com' },
+silly testEngine   _id: 'color-terminal@0.0.2',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/package' }
+verbose caching /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/package/package.json
+verbose loadDefaults color-terminal@0.0.2
+verbose tarball contents [ 'package' ]
+verbose from cache /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/package/package.json
+verbose pack /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/package /Users/yumitsu/.npm/color-terminal/0.0.2/package.tgz
+silly makeList /var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents/package
+verbose mkdir'ed /Users/yumitsu/.npm/color-terminal/0.0.2
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/var/folders/y3/b3c1gs1s6mq682ypylxbc6pw0000gn/T/npm-1325287054460/1325287054460-0.1563105951063335/contents' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/yumitsu/.npm/color-terminal/0.0.2/___package.npm'
+verbose mkdir done: /Users/yumitsu/.npm/color-terminal/0.0.2/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/yumitsu/.npm/color-terminal/0.0.2/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/Users/yumitsu/.npm/color-terminal/0.0.2/package.tgz' ],
+silly spawning   '/Users/yumitsu/.npm/color-terminal/0.0.2/___package.npm' ]
+silly tar err x package/color-terminal.js
+silly tar err x package/index.js
+silly tar err x package/LICENSE
+silly tar err x package/package.json
+silly tar err x package/README.md
+silly tar exit 0
+silly asyncMap in gTP /Users/yumitsu/.npm/color-terminal/0.0.2/___package.npm/package
+silly asyncMap in gTP /Users/yumitsu/.npm/color-terminal/0.0.2/___package.npm/package/color-terminal.js
+silly asyncMap in gTP /Users/yumitsu/.npm/color-terminal/0.0.2/___package.npm/package/index.js
+silly asyncMap in gTP /Users/yumitsu/.npm/color-terminal/0.0.2/___package.npm/package/LICENSE
+silly asyncMap in gTP /Users/yumitsu/.npm/color-terminal/0.0.2/___package.npm/package/package.json
+silly asyncMap in gTP /Users/yumitsu/.npm/color-terminal/0.0.2/___package.npm/package/README.md
+verbose gunzed /Users/yumitsu/.npm/color-terminal/0.0.2/___package.npm/package
+verbose rm'ed /Users/yumitsu/.npm/color-terminal/0.0.2/package
+verbose renamed [ '/Users/yumitsu/.npm/color-terminal/0.0.2/___package.npm/package',
+verbose renamed   '/Users/yumitsu/.npm/color-terminal/0.0.2/package' ]
+silly testEngine { name: 'color-terminal',
+silly testEngine   description: 'Control your terminal colours.',
+silly testEngine   author: 
+silly testEngine    { name: 'Mattijs Hoitink',
+silly testEngine      email: 'mattijs@monkeyandmachine.com',
+silly testEngine      url: 'http://monkeyandmachine.com/' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Alexander \'yumitsu\' Zinchenko',
+silly testEngine        email: 'yumitsu@mouseed.com',
+silly testEngine        url: 'https://github.com/yumitsu/' },
+silly testEngine      { name: 'Forgotten Labors Initiative',
+silly testEngine        url: 'https://github.com/forgotten-labour' } ],
+silly testEngine   homepage: 'https://github.com/forgotten-labors/node-color-terminal',
+silly testEngine   bugs: 
+silly testEngine    { email: 'forlab@mouseed.com',
+silly testEngine      url: 'https://github.com/forgotten-labors/node-color-terminal/issues' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/forgotten-labors/node-color-terminal.git' },
+silly testEngine   main: 'color-terminal',
+silly testEngine   files: 
+silly testEngine    [ 'index.js',
+silly testEngine      'LICENSE',
+silly testEngine      'package.json',
+silly testEngine      'README.md',
+silly testEngine      'color-terminal.js' ],
+silly testEngine   version: '0.0.2',
+silly testEngine   keywords: [ 'terminal', 'colors', 'text' ],
+silly testEngine   _npmUser: 
+silly testEngine    { name: 'forgotten-labors',
+silly testEngine      email: 'forlab-public@mouseed.com' },
+silly testEngine   _id: 'color-terminal@0.0.2',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.105',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: 
+silly testEngine    { shasum: '9e5470c35d22cda91097bc6095f0f86e44e9cff7',
+silly testEngine      tarball: 'http://registry.npmjs.org/color-terminal/-/color-terminal-0.0.2.tgz' } }
+verbose caching /Users/yumitsu/.npm/color-terminal/0.0.2/package/package.json
+verbose loadDefaults color-terminal@0.0.2
+silly updated sha bytes 10240
+info shasum 9e5470c35d22cda91097bc6095f0f86e44e9cff7
+info shasum /Users/yumitsu/.npm/color-terminal/0.0.2/package.tgz
+verbose from cache /Users/yumitsu/.npm/color-terminal/0.0.2/package/package.json
+verbose chmod /Users/yumitsu/.npm/color-terminal/0.0.2/package.tgz 644
+verbose chown [ '/Users/yumitsu/.npm/color-terminal/0.0.2/package.tgz',
+verbose chown   501,
+verbose chown   20 ]
+silly publish { name: 'color-terminal',
+silly publish   description: 'Control your terminal colours.',
+silly publish   author: 
+silly publish    { name: 'Mattijs Hoitink',
+silly publish      email: 'mattijs@monkeyandmachine.com',
+silly publish      url: 'http://monkeyandmachine.com/' },
+silly publish   contributors: 
+silly publish    [ { name: 'Alexander \'yumitsu\' Zinchenko',
+silly publish        email: 'yumitsu@mouseed.com',
+silly publish        url: 'https://github.com/yumitsu/' },
+silly publish      { name: 'Forgotten Labors Initiative',
+silly publish        url: 'https://github.com/forgotten-labour' } ],
+silly publish   homepage: 'https://github.com/forgotten-labors/node-color-terminal',
+silly publish   bugs: 
+silly publish    { email: 'forlab@mouseed.com',
+silly publish      url: 'https://github.com/forgotten-labors/node-color-terminal/issues' },
+silly publish   repository: 
+silly publish    { type: 'git',
+silly publish      url: 'git://github.com/forgotten-labors/node-color-terminal.git' },
+silly publish   main: 'color-terminal',
+silly publish   files: 
+silly publish    [ 'index.js',
+silly publish      'LICENSE',
+silly publish      'package.json',
+silly publish      'README.md',
+silly publish      'color-terminal.js' ],
+silly publish   version: '0.0.2',
+silly publish   keywords: [ 'terminal', 'colors', 'text' ],
+silly publish   _npmUser: 
+silly publish    { name: 'forgotten-labors',
+silly publish      email: 'forlab-public@mouseed.com' },
+silly publish   _id: 'color-terminal@0.0.2',
+silly publish   dependencies: {},
+silly publish   devDependencies: {},
+silly publish   engines: { node: '*' },
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.0.105',
+silly publish   _nodeVersion: 'v0.4.12',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: '9e5470c35d22cda91097bc6095f0f86e44e9cff7',
+silly publish      tarball: 'http://registry.npmjs.org/color-terminal/-/color-terminal-0.0.2.tgz' } }
+verbose PUT color-terminal
+verbose raw, before any munging color-terminal
+verbose url resolving [ 'https://registry.npmjs.org/', './color-terminal' ]
+verbose url resolved https://registry.npmjs.org/color-terminal
+verbose GET color-terminal
+verbose raw, before any munging color-terminal
+verbose url resolving [ 'https://registry.npmjs.org/', './color-terminal' ]
+verbose url resolved https://registry.npmjs.org/color-terminal
+info Already published color-terminal@0.0.2
+verbose uploading bin dists []
+ERR! publish fail Cannot publish over existing version.
+ERR! publish fail Bump the 'version' field, set the --force flag, or
+ERR! publish fail     npm unpublish 'color-terminal@0.0.2'
+ERR! publish fail and try again
+ERR! 
+ERR! System Darwin 11.2.0
+ERR! command "node" "/usr/local/bin/npm" "publish"
+ERR! cwd /Users/yumitsu/Work/opensource/node-terminal
+ERR! node -v v0.4.12
+ERR! npm -v 1.0.105
+ERR! code EPUBLISHCONFLICT
+verbose exit [ 1, true ]

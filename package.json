@@ -8,6 +8,6 @@
     "repository": {"type": "git", "url": "https://github.com/forgotten-labors/node-color-terminal.git"},
     "main": "color-terminal",
     "files": ["index.js", "LICENSE", "package.json", "README.md", "color-terminal.js"],
-    "version": "0.0.2",
+    "version": "0.0.3",
     "keywords": ["terminal", "colors", "text"]
 }
