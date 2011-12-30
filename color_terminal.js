@@ -2,7 +2,7 @@ var sys = require('util');
     
 // Terminal object
 // Allows for controlling the terminal by outputting control characters
-var terminal = {
+var colorTerminal = {
     // Terminal escape character
     escape: '\033',
     
@@ -250,8 +250,12 @@ var terminal = {
     clearCharacters: function(n) {
         this.write(new Array(n + 2).join(' ')).left(n + 2);
         return this;
+    },
+    
+    reset: function() {
+        return this.colorize("%n");
     }
 };
 
 // Export the command object
-module.exports = terminal;
+module.exports = colorTerminal;

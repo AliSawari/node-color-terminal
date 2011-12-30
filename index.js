@@ -1,1 +1,1 @@
-module.exports = require('./terminal');
+module.exports = require('./color_terminal');
