@@ -160,7 +160,7 @@ var colorTerminal = {
         for (conversion in conversions) {
             // Special case for `reset`
             if ('reset' === conversions[conversion]) {
-                message = message.replace(conversion, this.reset);
+                message = message.replace(conversion, this.reset(true));
             } else {
                 message = message.replace(new RegExp(conversion, ['g']), this._color(conversions[conversion]));
             }
@@ -252,8 +252,16 @@ var colorTerminal = {
         return this;
     },
     
-    reset: function() {
-        return this.colorize("%n");
+    reset: function(sequence_only) {
+        if ( undefined === sequence_only ) {
+            sequence_only = false;
+        };
+        
+        if ( sequence_only ) {
+            return '\033[0m';
+        } else {
+            return this.colorize("%n");
+        }
     }
 };
 
