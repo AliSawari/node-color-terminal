@@ -193,6 +193,15 @@ var colorTerminal = {
         return this;
     },
     
+    // Print one or more tabulation characters
+    tab: function(n) {
+        n = n || 1;
+        for (var i = 0; i < n; i++) {
+            sys.print('\t');
+        }
+        return this;
+    },
+    
     // Move the terminal cursor
     move: function(x, y) {
         x = x || 0;
@@ -262,6 +271,12 @@ var colorTerminal = {
         } else {
             return this.colorize("%n");
         }
+    },
+    
+    function ask(desc, callback) {
+        process.stdout.write('  \033[90m' + desc + '\033[0m');
+        process.stdin.setEncoding('utf8');
+        process.stdin.once('data', callback).resume();
     }
 };
 

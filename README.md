@@ -83,11 +83,74 @@ The colorize function accepts the following modifiers:
     
           %n,%N  Resets the color
           %%     A single %
+          
+Multiple effects also can be set by providing `Object` as parameter to `color()` method:
+
+```coffeescript
+  terminal.color({"attribute": "bold", "foreground": "yellow"}).write('Yellow bold text')
+```
 
 Colored ouput can be reset with the `reset()` function:
 
 ```coffeescript
-  terminal.color('red').write('This is red,').reset().write(' and this is not');
+  terminal.color('red').write('This is red,').reset().write(' and this is not')
+```
+
+### Explanation to color modifiers
+
+As you see, `colorize()` method accepts preformatted strings with your selected modifiers.
+
+### Cursor control
+
+`color-terminal` provides methods for terminal cursor positioning. It can be usable in situations when you need strict text formatting. Example:
+
+```coffeescript
+  # 'move()' function uses left top corner as (0,0) origin, so (5,7) coords means that resulting point
+  # will be placed 5 symbols from the top corner and 7 symbols from the left corner.
+  #
+  # To reset terminal, you can use 'reset()' and 'clear()' methods.
+  terminal.move(5, 7).color('red').write('*').reset().clear() 
+```
+
+`color-terminal` also contains shorthand methods for cursor positioning that help to avoid geometric mess with 'move()' method:
+
+```coffeescript
+  # Places cursor 10 symbols up from the bottom corner.
+  terminal.up(10).write('yay!')
+  
+  # Places cursor 2 symbols down from the current position.
+  terminal.down(2).write('down')
+  
+  # Places cursor 4 symbols right from the current position.
+  terminal.right(2).write('padding')
+  
+  # Places cursor 6 symbols left from the current position.
+  terminal.left(6).write('left-left')
+```
+
+### 'Cleaners'
+
+Useful methods to clear contents from terminal.
+
+```coffeescript
+  # Clear all characters from the terminal
+  terminal.clear()
+  
+  # Clear the line the cursor is at
+  terminal.clearLine()
+  
+  # Clear the next `n` characters from the current cursor position. In current example method will clear six characters.
+  terminal.clearCharacters(6) # => equals terminal.write(new Array(6 + 2).join(' ')).left(6 + 2)
+```
+
+### Other methods
+
+```coffeescript
+  # Write the `n` new lines.
+  terminal.nl(2)  # => "\n\n"
+  
+  # Write the `n` tabulation characters.
+  terminal.tab(4) # => "\t\t\t\t"
 ```
 
 # Credits
@@ -98,7 +161,7 @@ Original package by Mattijs Hoitink.
 * [mattijs/node-terminal](https://github.com/mattijs/node-terminal) — original package.
 * [monkeyandmachine](http://monkeyandmachine.com) — author's blog.
 
-This version of the package maintained and developed by [Forgotten Labors Initiative](https://forgotten-labors.github.com).
+This fork of the package maintained and developed by [Forgotten Labors Initiative](https://forgotten-labors.github.com).
 
 # License
 
