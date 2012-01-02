@@ -56,7 +56,7 @@ This will output `Unicorn` in magenta (or purple). To change the background colo
 Using this syntax we can create `Rainbows` easily in one line:
 
 ```coffeescript
-  terminal.colorize('%rR%ma%ci%bn%yb%go%rw\n');
+  terminal.colorize('%rR%ma%ci%bn%yb%go%rw%n\n');
   
   # Or with background colors
   terminal.colorize('%w%1  R  %2  A  %3  I  %4  N  %5  B  %6  O  %7  W  %n ');
@@ -96,15 +96,35 @@ Colored ouput can be reset with the `reset()` function:
   terminal.color('red').write('This is red,').reset().write(' and this is not')
 ```
 
-### Explanation to color modifiers
+### Notice about color modifiers and `colorize()`
 
-As you see, `colorize()` method accepts preformatted strings with your selected modifiers.
+Remember, that multiple modifiers does not requires to reset formatting before EOL.
+Example:
+
+```coffeescript
+  # 'Rainbow', thin colors.
+  terminal.colorize('%rR%ma%ci%bn%yb%go%rw%n\n') # => 'Rainbow' in different colors
+  
+  # 'Rainbow', thin colors, bold modifier.
+  terminal.colorize('$_%rR%ma%ci%bn%yb%go%rw%n\n') # => Bold 'Rainbow' in different colors
+  
+  # 'Rainbow', bold colors.
+  terminal.colorize('%RR%Ma%Ci%Bn%Yb%Go%Rw%n\n') # => The same.
+```
+
+So, as you see, you don't need to output reset modifiers every time you colored text.
+Better practice will be use of `reset()` method called next to `colorize()`:
+
+```coffeescript
+  # Best practice
+  terminal.colorize('%RR%Ma%Ci%Bn%Yb%Go%Rw').reset()
+```
 
 ### Cursor control
 
 `color-terminal` provides methods for terminal cursor positioning. It can be usable in situations when you need strict text formatting. Example:
 
-```coffeescript
+```$_' modifier added to beginning of the line 
   # 'move()' function uses left top corner as (0,0) origin, so (5,7) coords means that resulting point
   # will be placed 5 symbols from the top corner and 7 symbols from the left corner.
   #
