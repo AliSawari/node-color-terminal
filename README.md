@@ -124,7 +124,7 @@ Better practice will be use of `reset()` method called next to `colorize()`:
 
 `color-terminal` provides methods for terminal cursor positioning. It can be usable in situations when you need strict text formatting. Example:
 
-```$_' modifier added to beginning of the line 
+```coffeescript
   # 'move()' function uses left top corner as (0,0) origin, so (5,7) coords means that resulting point
   # will be placed 5 symbols from the top corner and 7 symbols from the left corner.
   #
