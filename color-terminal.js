@@ -273,7 +273,7 @@ var colorTerminal = {
         }
     },
     
-    function ask(desc, callback) {
+    ask: function(desc, callback) {
         process.stdout.write('  \033[90m' + desc + '\033[0m');
         process.stdin.setEncoding('utf8');
         process.stdin.once('data', callback).resume();
