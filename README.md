@@ -26,6 +26,8 @@ Then `require()` package from your script:
 
 Some examples from the `examples` directory. 
 
+# Features
+
 ## Colors
 
 Control colored output. See also `examples/colors.js`. Colors may vary depending on the terminal settings.
@@ -118,6 +120,19 @@ Better practice will be use of `reset()` method called next to `colorize()`:
 ```coffeescript
   # Best practice
   terminal.colorize('%RR%Ma%Ci%Bn%Yb%Go%Rw').reset()
+```
+
+### String\#color()
+
+You can use color formatting with `String` `color()` method. Example:
+
+```coffeescript
+  # String#color() accepts three parameters: foreground(text) color, background color and style attribute.
+  "string".color('white', 'red', 'blink') # => Blinking white string 'string' with red background
+  
+  # If you need just to set foreground color and style and not the background, pass null or empty string to param:
+  "another string".color('blue', null, 'bold') # => Is equivalent to:
+  "another string".color('blue', '', 'bold')
 ```
 
 ### Cursor control

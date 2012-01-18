@@ -262,7 +262,7 @@ var colorTerminal = {
     },
     
     reset: function(sequence_only) {
-        if ( undefined === sequence_only ) {
+        if ( typeof sequence_only === 'undefined' ) {
             sequence_only = false;
         };
         
@@ -279,6 +279,24 @@ var colorTerminal = {
         process.stdin.once('data', callback).resume();
     }
 };
+
+if (false === ('color' in new String)) {
+  String.prototype.color = function(foreground, background, style) {
+    var params = {};
+
+    if ( typeof style != 'undefined' && style != null && style.length > 0 ) {
+      params['attribute'] = style;
+    }
+    if ( typeof background != 'undefined' && background != null && background.length > 0 ) {
+      params['background'] = background;
+    }
+    if ( typeof foreground != 'undefined' && foreground != null && foreground.length > 0 ) {
+      params['foreground'] = foreground;
+    }
+
+    return colorTerminal.color(params).write(this).reset();
+  };
+}
 
 // Export the command object
 module.exports = colorTerminal;
