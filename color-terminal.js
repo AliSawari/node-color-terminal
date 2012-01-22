@@ -1,4 +1,5 @@
 var sys = require('util');
+var tty = require('tty');
     
 // Terminal object
 // Allows for controlling the terminal by outputting control characters
@@ -273,11 +274,14 @@ var colorTerminal = {
         }
     },
     
-    ask: function(desc, callback) {
-        process.stdout.write('  \033[90m' + desc + '\033[0m');
+    ask: function(message, callback) {
+        this.write(desc);
         process.stdin.setEncoding('utf8');
         process.stdin.once('data', callback).resume();
-    }
+        return this;
+    },
+    
+    password: function(message, callback) {}
 };
 
 if (false === ('color' in new String)) {
